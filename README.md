@@ -34,4 +34,13 @@ The original exercise produced alerts for the test file's creation, modification
 I learned how monitoring configuration affects visibility and how to examine an alert beyond its title. I also learned to separate what the event proves from what still requires investigation.
 
 ## Supporting Evidence
-Screenshots and configuration details will be added after review to confirm the monitored endpoint, file path, and settings used in the original exercise
+
+[View the file monitoring screenshot](Wazuh-FIM-Evidence/01-macos-file-modified-and-deleted.png)
+
+The screenshot, recovered from my original LinkedIn project post, shows two Wazuh events for the macOS endpoint `kenneth-mac`:
+- A modification to `/Users/Shared/wazuh-fim-lab/test-file.txt`
+- Deletion of that same file
+
+Both events have a rule level of 7. This shows that Wazuh recorded the changes, but the screenshot alone does not identify who made them or establish malicious activity.
+
+A screenshot of the file creation event and the original monitoring configuration were not recovered.
